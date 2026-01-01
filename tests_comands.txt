@@ -1,0 +1,23 @@
+python pyexplorer.py list
+
+python pyexplorer.py create file test1.txt
+python pyexplorer.py create dir folder1
+python pyexplorer.py create file test2.txt --path ./folder1
+
+python pyexplorer.py list
+python pyexplorer.py list folder1
+
+python pyexplorer.py rename test1.txt renamed_file.txt
+
+python pyexplorer.py search "*.txt"
+
+python pyexplorer.py copy renamed_file.txt folder1/copied.txt
+
+python pyexplorer.py move renamed_file.txt folder1/
+
+python pyexplorer.py search "renamed*" --recursive
+
+python pyexplorer.py delete folder1/copied.txt --force
+python pyexplorer.py delete folder1 --recursive --force
+
+python pyexplorer.py list
